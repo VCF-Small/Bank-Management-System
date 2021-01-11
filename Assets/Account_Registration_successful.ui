@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Admin_Login_Form</class>
- <widget class="QWidget" name="Admin_Login_Form">
+ <class>Account_Registration_successful</class>
+ <widget class="QWidget" name="Account_Registration_successful">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -26,7 +26,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">#Admin_Login_Form{
+   <string notr="true">#Account_Registration_successful{
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.02, y2:0.0340909, stop:0 rgba(255, 255, 255, 255), stop:0.495 rgba(0, 0, 0, 199), stop:0.505 rgba(28, 28, 28, 255), stop:1 rgba(53, 53, 53, 255));
 }
 #topframe{
@@ -101,70 +101,50 @@ border-bottom:3px solid #aaff00;
     <rect>
      <x>410</x>
      <y>210</y>
-     <width>391</width>
+     <width>561</width>
      <height>201</height>
     </rect>
    </property>
    <property name="title">
-    <string>                 :: Admin Login ::                  </string>
+    <string>                 :: Account Registration successful ::                  </string>
    </property>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>53</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>USERNAME : </string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>37</x>
-      <y>99</y>
-      <width>91</width>
+      <x>30</x>
+      <y>40</y>
+      <width>511</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>PASSWORD : </string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="Username">
-    <property name="geometry">
-     <rect>
-      <x>122</x>
-      <y>47</y>
-      <width>231</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="Password">
-    <property name="geometry">
-     <rect>
-      <x>122</x>
-      <y>93</y>
-      <width>231</width>
-      <height>31</height>
-     </rect>
+     <string>Please wait till administrator validate yoour account, then you can login to you account.</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Login_btn">
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>150</y>
+      <y>130</y>
       <width>151</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
      <string>LOGIN</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>70</y>
+      <width>311</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>If you are already register, or active user then please.</string>
     </property>
    </widget>
   </widget>

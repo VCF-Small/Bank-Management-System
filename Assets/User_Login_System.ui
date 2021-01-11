@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Admin_Login_Form</class>
- <widget class="QWidget" name="Admin_Login_Form">
+ <class>User_Login_System</class>
+ <widget class="QWidget" name="User_Login_System">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -26,7 +26,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">#Admin_Login_Form{
+   <string notr="true">#User_Login_System{
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.02, y2:0.0340909, stop:0 rgba(255, 255, 255, 255), stop:0.495 rgba(0, 0, 0, 199), stop:0.505 rgba(28, 28, 28, 255), stop:1 rgba(53, 53, 53, 255));
 }
 #topframe{
@@ -100,41 +100,41 @@ border-bottom:3px solid #aaff00;
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>210</y>
+     <y>190</y>
      <width>391</width>
-     <height>201</height>
+     <height>241</height>
     </rect>
    </property>
    <property name="title">
-    <string>                 :: Admin Login ::                  </string>
+    <string>                 :: Customer Login ::                  </string>
    </property>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>53</y>
-      <width>91</width>
+      <x>10</x>
+      <y>50</y>
+      <width>111</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>USERNAME : </string>
+     <string>Account Number :</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>37</x>
+      <x>17</x>
       <y>99</y>
-      <width>91</width>
+      <width>111</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>PASSWORD : </string>
+     <string>Enter Password :</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="Username">
+   <widget class="QLineEdit" name="Account_Number">
     <property name="geometry">
      <rect>
       <x>122</x>
@@ -157,14 +157,40 @@ border-bottom:3px solid #aaff00;
    <widget class="QPushButton" name="Login_btn">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>150</y>
-      <width>151</width>
+      <x>120</x>
+      <y>130</y>
+      <width>91</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
      <string>LOGIN</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Register_btn">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>200</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>REGISTER NOW &gt;&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>170</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>New User? Please</string>
     </property>
    </widget>
   </widget>

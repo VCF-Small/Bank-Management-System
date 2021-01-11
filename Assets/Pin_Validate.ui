@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Admin_Login_Form</class>
- <widget class="QWidget" name="Admin_Login_Form">
+ <class>Pin_Validate</class>
+ <widget class="QWidget" name="Pin_Validate">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -26,7 +26,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">#Admin_Login_Form{
+   <string notr="true">#Pin_Validate{
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.02, y2:0.0340909, stop:0 rgba(255, 255, 255, 255), stop:0.495 rgba(0, 0, 0, 199), stop:0.505 rgba(28, 28, 28, 255), stop:1 rgba(53, 53, 53, 255));
 }
 #topframe{
@@ -45,9 +45,6 @@ QGroupBox{
 background:#c2c7cf;
 font: 75 12pt &quot;MS Shell Dlg 2&quot;;
 	text-decoration: underline;
-}
-#Back_btn{
-background:#aaff00;
 }
 QLineEdit{
 border-radius:15px;
@@ -99,49 +96,26 @@ border-bottom:3px solid #aaff00;
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>410</x>
-     <y>210</y>
+     <x>420</x>
+     <y>200</y>
      <width>391</width>
-     <height>201</height>
+     <height>211</height>
     </rect>
    </property>
    <property name="title">
-    <string>                 :: Admin Login ::                  </string>
+    <string>                 :: Customer Login ::                  </string>
    </property>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>53</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>USERNAME : </string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>37</x>
+      <x>47</x>
       <y>99</y>
-      <width>91</width>
+      <width>81</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>PASSWORD : </string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="Username">
-    <property name="geometry">
-     <rect>
-      <x>122</x>
-      <y>47</y>
-      <width>231</width>
-      <height>31</height>
-     </rect>
+     <string>Enter Pin :</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="Password">
@@ -157,29 +131,16 @@ border-bottom:3px solid #aaff00;
    <widget class="QPushButton" name="Login_btn">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>150</y>
-      <width>151</width>
+      <x>170</x>
+      <y>160</y>
+      <width>131</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>LOGIN</string>
+     <string>Validate Pin</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QPushButton" name="Back_btn">
-   <property name="geometry">
-    <rect>
-     <x>472</x>
-     <y>452</y>
-     <width>161</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt; Back to home</string>
-   </property>
   </widget>
   <widget class="QFrame" name="sideframe">
    <property name="geometry">

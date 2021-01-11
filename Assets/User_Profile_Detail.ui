@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>User_Profile</class>
+ <widget class="QWidget" name="User_Profile">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1270</width>
+    <height>590</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1270</width>
+    <height>590</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1270</width>
+    <height>590</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#User_Profile{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.02, y2:0.0340909, stop:0 rgba(255, 255, 255, 255), stop:0.495 rgba(0, 0, 0, 199), stop:0.505 rgba(28, 28, 28, 255), stop:1 rgba(53, 53, 53, 255));
+}
+#topframe{
+background-color: qconicalgradient(cx:0.000472637, cy:0, angle:227.8, stop:0 rgba(30, 0, 255, 255), stop:0.375 rgba(0, 195, 255, 252), stop:0.423533 rgba(37, 0, 255, 255), stop:0.45 rgba(0, 130, 255, 255), stop:0.477581 rgba(0, 56, 255, 252), stop:0.518717 rgba(71, 171, 255, 255), stop:0.542289 rgba(71, 171, 255, 255), stop:0.547264 rgba(68, 134, 249, 255), stop:0.55 rgba(0, 74, 255, 255), stop:0.552239 rgba(21, 93, 243, 255), stop:0.57754 rgba(102, 0, 255, 255), stop:0.625 rgba(0, 185, 255, 247), stop:1 rgba(255, 255, 0, 69));
+border:none;
+}
+#bottomframe{
+background-color: qlineargradient(spread:pad, x1:0.025, y1:0.892545, x2:0.0199005, y2:0, stop:0 rgba(244, 244, 244, 255), stop:0.495 rgba(218, 212, 186, 230), stop:0.505 rgba(236, 224, 224, 255), stop:1 rgba(253, 246, 246, 255));
+}
+QPushButton{
+border-radius:15px;
+background:#aaff00;
+border:2px solid #aaff00;
+font: 75 12pt &quot;MS Sans Serif&quot;;
+}
+#Back_btn{
+background:#aaff00;
+}
+#Account_Information_btn, #Users_Details_btn{
+background:none;
+border:none;
+color:blue;
+text-decoration: underline;
+}
+#frame{
+background:#d4d4d4;
+}
+Line{
+background:rgb(6, 6, 6)
+}
+#text{
+color:white;
+	font: 75 14pt &quot;MS Sans Serif&quot;;
+}
+#Transaction_History{
+font: 12pt &quot;MS Sans Serif&quot;;
+border:1px solid black;
+}</string>
+  </property>
+  <widget class="QFrame" name="bottomframe">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>520</y>
+     <width>1251</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>10</y>
+      <width>171</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Project by: Ankit Choudhary </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>30</y>
+      <width>381</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ID: 19CS014   Anand International College of Engineering, Jaipur</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="sideframe">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>119</y>
+     <width>151</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="Admin_Home_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Admin Home</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="User_Details_btn">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>112</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>User Details</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Account_Details_btn">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>162</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Account Details</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Log_out_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>212</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sign/Log out</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="topframe">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1251</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/Bank-Management-System.png</normaloff>Images/Bank-Management-System.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>1300</width>
+     <height>520</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>160</y>
+     <width>1061</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1059</width>
+      <height>319</height>
+     </rect>
+    </property>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>171</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Account Holder Name : </string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>-3</x>
+        <y>50</y>
+        <width>174</width>
+        <height>3</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>27</x>
+        <y>57</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mobile Number : </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Full Address : </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>146</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Account Number : </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>172</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Current Balance :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>199</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Transaction Type : </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>229</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Amount(Cr/Dr) :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>256</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Date of Transfer :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>284</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Transaction Description :</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>77</y>
+        <width>174</width>
+        <height>3</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>140</y>
+        <width>174</width>
+        <height>3</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>166</y>
+        <width>174</width>
+        <height>3</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>193</y>
+        <width>174</width>
+        <height>3</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_8">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>220</y>
+        <width>174</width>
+        <height>3</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_9">
+      <property name="geometry">
+       <rect>
+        <x>-2</x>
+        <y>250</y>
+        <width>174</width>
+        <height>3</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_10">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>278</y>
+        <width>174</width>
+        <height>3</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="Account_Holder_Name">
+     <property name="geometry">
+      <rect>
+       <x>174</x>
+       <y>3</y>
+       <width>381</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Email_ID">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>23</y>
+       <width>311</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Email_ID_2">
+     <property name="geometry">
+      <rect>
+       <x>175</x>
+       <y>23</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Email : </string>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>50</y>
+       <width>680</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_4">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>77</y>
+       <width>680</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_11">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>140</y>
+       <width>680</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_12">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>166</y>
+       <width>890</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_13">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>193</y>
+       <width>890</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_14">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>220</y>
+       <width>890</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_29">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>250</y>
+       <width>890</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_30">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>278</y>
+       <width>890</width>
+       <height>3</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Email_ID_5">
+     <property name="geometry">
+      <rect>
+       <x>175</x>
+       <y>56</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Phone : </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Phone_Number">
+     <property name="geometry">
+      <rect>
+       <x>225</x>
+       <y>56</y>
+       <width>311</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Address">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>82</y>
+       <width>311</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Email_ID_8">
+     <property name="geometry">
+      <rect>
+       <x>192</x>
+       <y>104</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>City : </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="City">
+     <property name="geometry">
+      <rect>
+       <x>225</x>
+       <y>105</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Email_ID_10">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>104</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>State : </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="State">
+     <property name="geometry">
+      <rect>
+       <x>366</x>
+       <y>103</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Email_ID_12">
+     <property name="geometry">
+      <rect>
+       <x>193</x>
+       <y>118</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Zip Code : </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Zip_Code">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>119</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Account_Number">
+     <property name="geometry">
+      <rect>
+       <x>175</x>
+       <y>146</y>
+       <width>381</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Current_Balance">
+     <property name="geometry">
+      <rect>
+       <x>174</x>
+       <y>170</y>
+       <width>381</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="Line" name="line_31">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>0</y>
+       <width>3</width>
+       <height>166</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="User_Picture">
+     <property name="geometry">
+      <rect>
+       <x>864</x>
+       <y>5</y>
+       <width>181</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>197</y>
+       <width>181</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>--Select transaction type--</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Credit</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Debit</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="Transaction_History">
+     <property name="geometry">
+      <rect>
+       <x>526</x>
+       <y>197</y>
+       <width>231</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Sans Serif</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>View Transaction History</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="Amount">
+     <property name="geometry">
+      <rect>
+       <x>182</x>
+       <y>226</y>
+       <width>181</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="Date_of_Transfer">
+     <property name="geometry">
+      <rect>
+       <x>185</x>
+       <y>255</y>
+       <width>141</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="Transaction_Description">
+     <property name="geometry">
+      <rect>
+       <x>176</x>
+       <y>284</y>
+       <width>301</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="text">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>124</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>User Details</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Back_btn">
+   <property name="geometry">
+    <rect>
+     <x>475</x>
+     <y>485</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt; Back to home</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Back_btn_2">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>485</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Proceed Transaction</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

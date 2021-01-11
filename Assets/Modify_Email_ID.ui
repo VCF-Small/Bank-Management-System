@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Admin_Login_Form</class>
- <widget class="QWidget" name="Admin_Login_Form">
+ <class>Modify_Email_ID</class>
+ <widget class="QWidget" name="Modify_Email_ID">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -26,7 +26,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">#Admin_Login_Form{
+   <string notr="true">#Modify_Email_ID{
 background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.02, y2:0.0340909, stop:0 rgba(255, 255, 255, 255), stop:0.495 rgba(0, 0, 0, 199), stop:0.505 rgba(28, 28, 28, 255), stop:1 rgba(53, 53, 53, 255));
 }
 #topframe{
@@ -38,20 +38,17 @@ background-color: qlineargradient(spread:pad, x1:0.025, y1:0.892545, x2:0.019900
 }
 QPushButton{
 border-radius:15px;
+background:#aaff00;
 border:2px solid #aaff00;
 font: 75 12pt &quot;MS Sans Serif&quot;;
 }
-QGroupBox{
-background:#c2c7cf;
-font: 75 12pt &quot;MS Shell Dlg 2&quot;;
-	text-decoration: underline;
+#label_3{
+background:#cfcfcf;
+	font: 15pt &quot;MS Sans Serif&quot;;
 }
-#Back_btn{
-background:#aaff00;
-}
-QLineEdit{
-border-radius:15px;
-border-bottom:3px solid #aaff00;
+#label_4,#label_5,#label_6{
+background:#cfcfcf;
+	font: 12pt &quot;MS Sans Serif&quot;;
 }</string>
   </property>
   <widget class="QFrame" name="bottomframe">
@@ -96,97 +93,12 @@ border-bottom:3px solid #aaff00;
     </property>
    </widget>
   </widget>
-  <widget class="QGroupBox" name="groupBox">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>210</y>
-     <width>391</width>
-     <height>201</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>                 :: Admin Login ::                  </string>
-   </property>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>53</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>USERNAME : </string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>37</x>
-      <y>99</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>PASSWORD : </string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="Username">
-    <property name="geometry">
-     <rect>
-      <x>122</x>
-      <y>47</y>
-      <width>231</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="Password">
-    <property name="geometry">
-     <rect>
-      <x>122</x>
-      <y>93</y>
-      <width>231</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Login_btn">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>150</y>
-      <width>151</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>LOGIN</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QPushButton" name="Back_btn">
-   <property name="geometry">
-    <rect>
-     <x>472</x>
-     <y>452</y>
-     <width>161</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>&lt; Back to home</string>
-   </property>
-  </widget>
   <widget class="QFrame" name="sideframe">
    <property name="geometry">
     <rect>
      <x>9</x>
      <y>119</y>
-     <width>141</width>
+     <width>151</width>
      <height>401</height>
     </rect>
    </property>
@@ -196,6 +108,58 @@ border-bottom:3px solid #aaff00;
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
+   <widget class="QPushButton" name="Admin_Home_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Admin Home</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="User_Details_btn">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>112</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>User Details</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Account_Details_btn">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>162</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Account Details</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Log_out_btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>212</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sign/Log out</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QPushButton" name="topframe">
    <property name="geometry">
@@ -218,6 +182,114 @@ border-bottom:3px solid #aaff00;
      <width>1300</width>
      <height>520</height>
     </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>220</y>
+     <width>381</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Change Email Address</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>250</y>
+     <width>381</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>   User Name :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>280</y>
+     <width>381</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string> Old E-mail ID : </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>310</y>
+     <width>381</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>New E-mail ID : </string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Username">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>257</y>
+     <width>231</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Old_Email_id">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>286</y>
+     <width>231</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="New_Email_id">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>315</y>
+     <width>231</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>467</x>
+     <y>387</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Modify Emial ID</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>657</x>
+     <y>390</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
    </property>
   </widget>
  </widget>
